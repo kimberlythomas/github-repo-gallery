@@ -39,7 +39,7 @@ const displayUserData = function(data) {
 };
 
 const getRepoList = async function () {
-    const fetchRepos = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=10`);
+    const fetchRepos = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=25`);
     const repoData = await fetchRepos.json();
     displayRepoData(repoData);
 };
